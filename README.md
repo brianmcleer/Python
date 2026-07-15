@@ -10,6 +10,7 @@ A collection of Python scripts and utilities for GIS automation, primarily focus
 | [arcgis-locator-rebuilder](./arcgis-locator-rebuilder) | Scheduled rebuilds of composite geocoding locators via the ArcGIS Server Admin REST API, with safe service stop/rebuild/restart orchestration and guaranteed service restart on failure. |
 | [arcgis-network-dataset-rebuilder](./arcgis-network-dataset-rebuilder) | End-to-end network dataset maintenance for routing: refresh sources from production, populate network attributes and hierarchy-penalized travel times, rebuild the network, and compress the geodatabase. |
 | [arcgis-replica-auditor](./arcgis-replica-auditor) | Replica health system: audits feature service sync replicas across multiple enterprise geodatabases, unregisters replicas older than a rolling age threshold, and ships with a single-file HTML dashboard visualizing owners, sync status, and source databases. |
+| [arcgis-webmap-popups](./arcgis-webmap-popups) | Applies one consistent, accessible Arcade popup to every feature layer in a MapServer group layer, driven from a single reusable expression file. Auto-formats dates, domains, currency, phones, emails, and links with WCAG-conscious HTML. |
 
 More utilities will be added over time.
 
