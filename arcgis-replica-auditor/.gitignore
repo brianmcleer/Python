@@ -1,0 +1,11 @@
+# Credentials - never commit
+secrets.py
+
+# Runtime artifacts
+Log/
+__pycache__/
+*.pyc
+
+# Generated export (replicas.js ships with sample data; real runs overwrite
+# both files with production data - do not commit real exports)
+dashboard/replicas.json
