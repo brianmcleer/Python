@@ -1,0 +1,7 @@
+# Credentials - never commit
+secrets.py
+
+# Runtime artifacts
+Log/
+__pycache__/
+*.pyc

@@ -7,6 +7,7 @@ A collection of Python scripts and utilities for GIS automation, primarily focus
 | Folder | Description |
 |--------|-------------|
 | [arcgis-vector-tile-updater](./arcgis-vector-tile-updater) | Automates refreshing a hosted vector tile layer on ArcGIS Enterprise from an ArcGIS Pro project using the Replace Layer workflow. Preserves the production item ID and service URL so webmaps never break. |
+| [arcgis-locator-rebuilder](./arcgis-locator-rebuilder) | Scheduled rebuilds of composite geocoding locators via the ArcGIS Server Admin REST API, with safe service stop/rebuild/restart orchestration and guaranteed service restart on failure. |
 
 More utilities will be added over time.
 
