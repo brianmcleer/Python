@@ -59,7 +59,6 @@ from email.mime.text import MIMEText
 from datetime import datetime
 from arcgis.gis import GIS
 
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # ===========================================================================
 # CONFIGURATION
@@ -75,8 +74,11 @@ PORTAL_USERNAME = "your_publishing_user"
 # Password lives in secrets.py (gitignored). See secrets.example.py.
 from secrets import PORTAL_PASSWORD
 
-# Set False if your Portal uses a certificate your environment trusts.
-VERIFY_CERT = False
+# Leave True. Set False only for a Portal with a self-signed certificate that
+# your environment does not trust, and understand this disables TLS validation.
+VERIFY_CERT = True
+if not VERIFY_CERT:
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- Portal item IDs (find these on each item's details page) --------------
 VTPK_ITEM_ID       = "REPLACE_WITH_VTPK_ITEM_ID"        # Vector Tile Package item

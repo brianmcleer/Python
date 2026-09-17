@@ -2685,6 +2685,15 @@
             });
         }
 
+        function escapeHtml(value) {
+            return String(value)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
         function updateFilterTags() {
             const tags = [];
             const search = document.getElementById('searchInput').value;
@@ -2692,10 +2701,10 @@
             const owner = document.getElementById('ownerFilter').value;
             const status = document.getElementById('statusFilter').value;
 
-            if (search) tags.push({ label: `Search: "${search}"`, clear: () => { document.getElementById('searchInput').value = ''; document.getElementById('searchClear').classList.remove('visible'); } });
-            if (db) tags.push({ label: `Database: ${db}`, clear: () => { document.getElementById('dbFilter').value = ''; } });
-            if (owner) tags.push({ label: `Owner: ${owner.split('@')[0]}`, clear: () => { document.getElementById('ownerFilter').value = ''; } });
-            if (status) tags.push({ label: `Status: ${status}`, clear: () => { document.getElementById('statusFilter').value = ''; } });
+            if (search) tags.push({ label: `Search: "${escapeHtml(search)}"`, clear: () => { document.getElementById('searchInput').value = ''; document.getElementById('searchClear').classList.remove('visible'); } });
+            if (db) tags.push({ label: `Database: ${escapeHtml(db)}`, clear: () => { document.getElementById('dbFilter').value = ''; } });
+            if (owner) tags.push({ label: `Owner: ${escapeHtml(owner.split('@')[0])}`, clear: () => { document.getElementById('ownerFilter').value = ''; } });
+            if (status) tags.push({ label: `Status: ${escapeHtml(status)}`, clear: () => { document.getElementById('statusFilter').value = ''; } });
 
             document.getElementById('filterTags').innerHTML = tags.map((t, i) =>
                 `<span class="filter-tag">${t.label}<button class="filter-tag-remove" onclick="clearFilterTag(${i})" aria-label="Remove filter"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></span>`
