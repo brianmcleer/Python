@@ -11,6 +11,7 @@ A collection of Python scripts and utilities for GIS automation, primarily focus
 | [arcgis-network-dataset-rebuilder](./arcgis-network-dataset-rebuilder) | End-to-end network dataset maintenance for routing: refresh sources from production, populate network attributes and hierarchy-penalized travel times, rebuild the network, and compress the geodatabase. |
 | [arcgis-replica-auditor](./arcgis-replica-auditor) | Replica health system: audits feature service sync replicas across multiple enterprise geodatabases, unregisters replicas older than a rolling age threshold, and ships with a single-file HTML dashboard visualizing owners, sync status, and source databases. |
 | [arcgis-webmap-popups](./arcgis-webmap-popups) | Applies one consistent, accessible Arcade popup to every feature layer in a MapServer group layer, driven from a single reusable expression file. Auto-formats dates, domains, currency, phones, emails, and links with WCAG-conscious HTML. |
+| [arcgis-broken-item-scanner](./arcgis-broken-item-scanner) | Scans every Portal or ArcGIS Online item for service and web map layer references that no longer respond, groups findings by item owner, and sends each owner one email with a CSV report. Handles federated Portal services from AGOL with a second sign-in. |
 
 More utilities will be added over time.
 
