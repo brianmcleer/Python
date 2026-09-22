@@ -1,5 +1,7 @@
 # Python
 
+[![License](https://img.shields.io/github/license/brianmcleer/Python)](LICENSE) [![Release](https://img.shields.io/github/v/release/brianmcleer/Python?display_name=tag)](https://github.com/brianmcleer/Python/releases) [![Issues](https://img.shields.io/github/issues/brianmcleer/Python)](https://github.com/brianmcleer/Python/issues)
+
 A collection of Python scripts and utilities for GIS automation, primarily focused on ArcGIS Enterprise, ArcGIS Online, and geodatabase administration.
 
 ## Projects

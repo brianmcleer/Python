@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: ArcGIS or Experience Builder question
+    url: https://community.esri.com/t5/arcgis-experience-builder/ct-p/arcgis-experience-builder
+    about: Questions about ArcGIS Experience Builder itself are better answered on Esri Community.
+  - name: Security problem
+    url: https://github.com/brianmcleer/Python/security/advisories/new
+    about: Please report vulnerabilities privately instead of opening an issue.

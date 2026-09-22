@@ -1,0 +1,50 @@
+name: Bug report
+description: Something in the widget does not work
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Questions about ArcGIS itself belong on Esri Community. This form is for the widget.
+  - type: input
+    id: widget-version
+    attributes:
+      label: Widget version
+      description: From the widget's manifest.json
+      placeholder: "1.4.2"
+    validations:
+      required: true
+  - type: input
+    id: exb-version
+    attributes:
+      label: Experience Builder version
+      description: Developer Edition version, or the build your portal reports
+      placeholder: "1.21 Developer Edition"
+    validations:
+      required: true
+  - type: input
+    id: portal
+    attributes:
+      label: Portal
+      description: ArcGIS Enterprise version, or ArcGIS Online
+      placeholder: "Enterprise 11.3"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what happened, and what you expected instead
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Browser console output
+      description: Anything logged when it went wrong. This is usually the fastest way to a fix.
+      render: text
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: "Chrome 141"

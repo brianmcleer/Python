@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest something the widget should do
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do
+      description: The workflow you are stuck on, not the solution you have in mind
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What you would like the widget to do
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How you handle it today
+      description: Another widget, a script, doing it by hand
