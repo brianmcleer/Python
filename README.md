@@ -14,6 +14,7 @@ A collection of Python scripts and utilities for GIS automation, primarily focus
 | [arcgis-replica-auditor](./arcgis-replica-auditor) | Replica health system: audits feature service sync replicas across multiple enterprise geodatabases, unregisters replicas older than a rolling age threshold, and ships with a single-file HTML dashboard visualizing owners, sync status, and source databases. |
 | [arcgis-webmap-popups](./arcgis-webmap-popups) | Applies one consistent, accessible Arcade popup to every feature layer in a MapServer group layer, driven from a single reusable expression file. Auto-formats dates, domains, currency, phones, emails, and links with WCAG-conscious HTML. |
 | [arcgis-broken-item-scanner](./arcgis-broken-item-scanner) | Scans every Portal or ArcGIS Online item for service and web map layer references that no longer respond, groups findings by item owner, and sends each owner one email with a CSV report. Handles federated Portal services from AGOL with a second sign-in. |
+| [arcgis-print-service-publisher](./arcgis-print-service-publisher) | Publishes an Export Web Map print service to ArcGIS Server from a folder of ArcGIS Pro layout files (.pagx), federated or stand-alone. Re-runnable, overwrites in place, verifies the template list, and can set the Portal print utility service. Avoids ArcGIS Online per-print credit charges for organization layouts. |
 
 More utilities will be added over time.
 

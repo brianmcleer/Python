@@ -1,0 +1,11 @@
+config.py
+logs/
+work/
+__pycache__/
+*.pyc
+*.log
+*.sd
+*.sddraft
+*.pdf
+.env
+.venv/
